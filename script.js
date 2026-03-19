@@ -122,6 +122,8 @@ btSomar.addEventListener("click", function(){
     numero1 = Number(visor.value);
     operacao = 1;
     visor.value = '0';
+    btSomar.classList.add('clicada');
+    console.log(btSomar);
 });
 
 btSubtrair.addEventListener("click", function(){

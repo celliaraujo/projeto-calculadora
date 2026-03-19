@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 240px;
+    height: 280px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid 1px gray;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgb(221, 221, 221);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    
+    
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#operacoes{
+    display: flex;
+    width: 190px;
+    height: 50px;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: black;
+}
+
+
+#operacoes button{
+    background-color: rgb(39, 37, 37);
+    border-radius: 50px;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+#operacoes button.clicada{
+    background-color: rgb(58, 167, 130);
+}
+
+#numeros{
+    display: flex;
+    gap: 10px;
+    width: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+button{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: rgb(32, 32, 32);
+}
+input{
+    font-size: 26px;
+    border-radius: 50px;
+    border: solid 1px gray;
+    width: 180px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    color: rgb(32, 32, 32);
+}
+
+#bt-igual{
+    background-color: rgb(30, 194, 65);
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#bt-cancelar{
+    background-color: rgb(241, 18, 18);
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
