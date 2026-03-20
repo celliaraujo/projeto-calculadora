@@ -1,19 +1,22 @@
 body{
     display: flex;
     justify-content: center;
+    background-color: rgb(37,37,37);
+    user-select: none;
+    cursor: default;
 }
 .container{
     display: flex;
     width: 240px;
-    height: 280px;
+    height: 360px;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: solid 1px gray;
-    border-radius: 10px;
-    justify-content: center;
-    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    justify-content: flex-end;
+    background-color: rgb(15, 15, 15);
     border: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     
@@ -21,11 +24,16 @@ body{
 }
 
 .botoes{
+    margin-top: 6px;
+    width: 240px;
+    height: 280px;
+    border-radius: 30px 30px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    background-color: rgb(221, 221, 221);
 }
 
 #operacoes{
@@ -42,7 +50,7 @@ body{
 
 
 #operacoes button{
-    background-color: rgb(39, 37, 37);
+    background-color: rgb(37, 37, 37);
     border-radius: 50px;
     color: white;
     width: 40px;
@@ -71,29 +79,53 @@ button{
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     color: rgb(32, 32, 32);
+    cursor: pointer;
+    filter: blur(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.3s ease;
+   
 }
+
+button:hover{
+    scale: 1.1;
+    backface-visibility: hidden;
+    filter: blur(0);
+}
+
+#bt0, #bt-igual, #bt-cancelar{
+    width: 90px;
+}
+
+
 input{
     font-size: 26px;
-    border-radius: 50px;
+    border-radius: 20px;
     border: solid 1px gray;
     width: 180px;
     height: 40px;
     padding-left: 10px;
     border: none;
     color: rgb(32, 32, 32);
+    caret-color: transparent;
+    cursor: default;
+    user-select: none;
+    box-shadow: inset 0 0 6px #dddddd;
 }
 
 #bt-igual{
-    background-color: rgb(30, 194, 65);
+    background-color: rgb(58, 167, 130);
     color: white;
     border: none;
+    margin-right: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 #bt-cancelar{
-    background-color: rgb(241, 18, 18);
+    background-color: rgb(192, 52, 52);
     color: white;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 16px;
 }
 
