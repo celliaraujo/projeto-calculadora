@@ -1,14 +1,16 @@
-body{
+body {
     display: flex;
     justify-content: center;
-    background-color: rgb(37,37,37);
+    background-color: rgb(37, 37, 37);
     user-select: none;
     cursor: default;
 }
-.container{
+
+.container {
     display: flex;
-    width: 240px;
-    height: 360px;
+    width: 100vw;
+    min-width: 240px;
+    height: 500px;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -19,14 +21,15 @@ body{
     background-color: rgb(15, 15, 15);
     border: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    
-    
+
+
 }
 
-.botoes{
+.botoes {
     margin-top: 6px;
-    width: 240px;
-    height: 280px;
+    width: 100%;
+    min-width: 240px;
+    height: 400px;
     border-radius: 30px 30px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -36,10 +39,11 @@ body{
     background-color: rgb(221, 221, 221);
 }
 
-#operacoes{
+#operacoes {
     display: flex;
-    width: 190px;
-    height: 50px;
+    max-width: 400px;
+    height:fit-content;
+    padding: 6px;
     flex-wrap: wrap;
     gap: 6px;
     justify-content: center;
@@ -49,32 +53,30 @@ body{
 }
 
 
-#operacoes button{
+#operacoes button {
     background-color: rgb(37, 37, 37);
     border-radius: 50px;
     color: white;
-    width: 40px;
-    height: 40px;
 }
 
-#operacoes button.clicada{
+#operacoes button.clicada {
     background-color: rgb(58, 167, 130);
 }
 
-#numeros{
+#numeros {
     display: flex;
     gap: 10px;
-    width: 200px;
+    max-width: 260px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 
 
-button{
+button {
     font-size: 20px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -84,26 +86,35 @@ button{
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: all 0.3s ease;
-   
+
 }
 
-button:hover{
+button:hover {
     scale: 1.1;
     backface-visibility: hidden;
     filter: blur(0);
 }
 
-#bt0, #bt-igual, #bt-cancelar{
-    width: 90px;
+#bt0,
+#bt-igual,
+#bt-cancelar {
+    width: 110px;
+}
+
+.visor{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 300px;
 }
 
 
-input{
+input {
     font-size: 26px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: solid 1px gray;
-    width: 180px;
-    height: 40px;
+    width: 100%;
+    height: 60px;
     padding-left: 10px;
     border: none;
     color: rgb(32, 32, 32);
@@ -111,9 +122,10 @@ input{
     cursor: default;
     user-select: none;
     box-shadow: inset 0 0 6px #dddddd;
+    margin: auto;
 }
 
-#bt-igual{
+#bt-igual {
     background-color: rgb(58, 167, 130);
     color: white;
     border: none;
@@ -121,11 +133,10 @@ input{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-#bt-cancelar{
+#bt-cancelar {
     background-color: rgb(192, 52, 52);
     color: white;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     font-size: 16px;
 }
-
