@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     background-color: rgb(37, 37, 37);
@@ -8,18 +10,16 @@ body {
 
 .container {
     display: flex;
-    max-width: 320px;
+    max-width: 340px;
     min-width: 240px;
     height: 500px;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: solid 1px gray;
     border-radius: 20px;
     justify-content: flex-end;
     background-color: rgb(15, 15, 15);
-    border: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
 
@@ -42,7 +42,7 @@ body {
 #operacoes {
     display: flex;
     max-width: 400px;
-    height:fit-content;
+    height: auto;
     padding: 6px;
     flex-wrap: wrap;
     gap: 6px;
@@ -71,8 +71,6 @@ body {
     flex-wrap: wrap;
 }
 
-
-
 button {
     font-size: 20px;
     width: 50px;
@@ -90,7 +88,7 @@ button {
 }
 
 button:hover {
-    scale: 1.1;
+    transform: scale(1.1);
     backface-visibility: hidden;
     filter: blur(0);
 }
@@ -101,7 +99,7 @@ button:hover {
     width: 110px;
 }
 
-.visor{
+.visor {
     display: flex;
     justify-content: center;
     width: 80%;
@@ -112,7 +110,6 @@ button:hover {
 input {
     font-size: 26px;
     border-radius: 30px;
-    border: solid 1px gray;
     width: 100%;
     height: 60px;
     padding-left: 10px;
@@ -139,4 +136,33 @@ input {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     font-size: 16px;
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 100vw;
+        max-width: none;
+        height: 100vh;
+    }
+    .botoes{
+        height: 80vh;
+    }
+
+    #operacoes button {
+        max-width: 20vw;
+        max-height: 20vw;
+        aspect-ratio: 1 / 1;
+    }
+    #numeros{
+        width: 80%;
+        max-width: none;
+    }
+
+    #numeros button {
+        width: 20vw;
+        min-width: 20vw;
+        max-width: 24vw;
+        height: 20vw;
+    }
+
 }
